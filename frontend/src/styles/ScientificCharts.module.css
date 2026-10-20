@@ -1,0 +1,119 @@
+.chartsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.chartCard {
+  background: rgba(27, 26, 24, 0.95);
+  border: 1px solid rgba(198, 166, 107, 0.25);
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+  backdrop-filter: blur(8px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.cardTitle {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--warm-ivory);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legendRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.70rem;
+  color: var(--secondary-text);
+  font-family: var(--font-mono);
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.legendLineNoisy {
+  width: 14px;
+  height: 3px;
+  background: var(--champagne-gold);
+  border-radius: 1px;
+}
+
+.legendLineIdeal {
+  width: 14px;
+  height: 2px;
+  border-top: 2px dashed var(--highlight-gold);
+}
+
+.legendLineClassical {
+  width: 14px;
+  height: 2px;
+  border-top: 2px dotted #A9A196;
+}
+
+.svgWrapper {
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.metricCell {
+  background: rgba(16, 17, 18, 0.7);
+  border: 1px solid rgba(198, 166, 107, 0.15);
+  border-radius: 4px;
+  padding: 0.55rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.metricLabel {
+  font-size: 0.68rem;
+  color: var(--secondary-text);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.metricValue {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--highlight-gold);
+}
+
+.metadataCard {
+  background: rgba(16, 17, 18, 0.7);
+  border: 1px solid rgba(198, 166, 107, 0.15);
+  border-radius: 4px;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.72rem;
+  color: var(--secondary-text);
+  line-height: 1.5;
+}

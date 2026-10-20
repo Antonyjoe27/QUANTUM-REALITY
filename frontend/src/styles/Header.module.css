@@ -1,0 +1,114 @@
+/* Header component styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: linear-gradient(
+    180deg,
+    rgba(16, 17, 18, 0.98) 0%,
+    rgba(27, 26, 24, 0.94) 100%
+  );
+  border-bottom: 1px solid rgba(198, 166, 107, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  cursor: pointer;
+}
+
+.header__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--champagne-gold);
+  line-height: 1;
+}
+
+.header__subtitle {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--secondary-text);
+  line-height: 1;
+}
+
+.header__status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  background: rgba(39, 38, 37, 0.7);
+  border: 1px solid rgba(198, 166, 107, 0.14);
+  border-radius: 4px;
+}
+
+.header__status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #555;
+}
+
+.header__status-dot--disconnected {
+  background: #6b5e4a;
+}
+
+.header__status-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary-text);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header__nav-item {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary-text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: none;
+  border: none;
+  padding: 0.4rem 0.2rem;
+  position: relative;
+}
+
+.header__nav-item:hover {
+  color: var(--highlight-gold);
+}
+
+.header__nav-item--active {
+  color: var(--highlight-gold);
+  font-weight: 600;
+  border-bottom: 2px solid var(--champagne-gold);
+}
+
+.header__milestone {
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  color: rgba(198, 166, 107, 0.5);
+  font-family: var(--font-mono);
+}

@@ -1,0 +1,6 @@
+# QUANTUM REALITY — Milestone 8 Report & Presentation Dependencies
+# Kept separate from core application runtime in backend/requirements.txt.
+
+matplotlib==3.11.2
+python-pptx==1.0.2
+pillow==13.0.0

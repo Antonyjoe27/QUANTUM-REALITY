@@ -1,0 +1,57 @@
+:root {
+  /* Obsidian & Champagne Gold design tokens */
+  --obsidian:        #101112;
+  --deep-graphite:   #1B1A18;
+  --graphite-panel:  #272625;
+  --champagne-gold:  #C6A66B;
+  --highlight-gold:  #D9BD87;
+  --warm-ivory:      #F0E9DB;
+  --secondary-text:  #A9A196;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--obsidian);
+  color: var(--warm-ivory);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--champagne-gold);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--highlight-gold);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--deep-graphite);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--graphite-panel);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--champagne-gold);
+}

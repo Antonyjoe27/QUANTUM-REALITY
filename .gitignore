@@ -1,0 +1,98 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env
+*.env
+.env.*
+!.env.example
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+.eggs/
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Type checkers
+.mypy_cache/
+.dmypy.json
+.pytype/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Node.js / Frontend ────────────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Vite / build output
+frontend/dist/
+frontend/.vite/
+dist/
+.cache/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# ── Blender ───────────────────────────────────────────────────────────────────
+*.blend1
+*.blend2
+*.bak
+# Exported GLB files are committed; temp Blender files are not
+assets/blender/__pycache__/
+
+# ── OS generated ──────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs/
+*.log
+*.log.*
+
+# ── IDE / editor ──────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*.orig
+
+# ── Secrets / credentials ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+secrets.json
+*.pem
+*.key
+
+# ── Evidence / report temporary files ────────────────────────────────────────
+evidence/*.tmp
+report/*.tmp

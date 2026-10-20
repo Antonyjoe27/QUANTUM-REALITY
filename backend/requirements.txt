@@ -1,0 +1,25 @@
+# QUANTUM REALITY — Backend Dependencies
+# Generated from D:\VISHAL ANNAN\backend\.venv after verified installation.
+#
+# Install into a fresh venv with:
+#   python -m venv .venv
+#   .venv\Scripts\pip install -r requirements.txt
+#
+# NOTE: pytest tests require network socket access (loopback). Run them
+# directly in a terminal, not through restricted sandbox environments.
+
+# Quantum simulation engine
+qiskit==2.6.0
+qiskit-aer==0.18.0
+
+# Web API framework
+fastapi[standard]==0.150.0
+uvicorn==0.54.0
+
+# Numerics
+numpy==2.4.6
+
+# Testing
+pytest==9.1.1
+pytest-timeout==2.4.0
+httpx==0.28.1

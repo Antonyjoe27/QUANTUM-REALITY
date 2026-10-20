@@ -1,0 +1,132 @@
+.viewportContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 40%, #1b1a18 0%, #101112 85%);
+  overflow: hidden;
+}
+
+.canvasWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.controlsOverlay {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.controlBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  background: rgba(27, 26, 24, 0.85);
+  border: 1px solid rgba(198, 166, 107, 0.25);
+  color: var(--champagne-gold);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+
+.controlBtn:hover {
+  background: rgba(39, 38, 37, 0.95);
+  border-color: var(--highlight-gold);
+  color: var(--highlight-gold);
+}
+
+.legendPill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  background: rgba(16, 17, 18, 0.75);
+  border: 1px solid rgba(198, 166, 107, 0.15);
+  border-radius: 4px;
+  font-size: 0.7rem;
+  color: var(--secondary-text);
+  backdrop-filter: blur(6px);
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--champagne-gold);
+  box-shadow: 0 0 6px rgba(198, 166, 107, 0.6);
+}
+
+.loadingOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--obsidian);
+  color: var(--champagne-gold);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  z-index: 20;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid rgba(198, 166, 107, 0.2);
+  border-top-color: var(--champagne-gold);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 1000;
+  pointer-events: none;
+  background: rgba(27, 26, 24, 0.95);
+  border: 1px solid var(--champagne-gold);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  transform: translate(12px, 12px);
+  max-width: 240px;
+  backdrop-filter: blur(10px);
+}
+
+.tooltipTitle {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--highlight-gold);
+  margin-bottom: 0.2rem;
+}
+
+.tooltipSub {
+  font-size: 0.68rem;
+  color: var(--warm-ivory);
+  line-height: 1.3;
+}
+
+.scrubberDock {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  max-width: 600px;
+  z-index: 10;
+  pointer-events: auto;
+}
