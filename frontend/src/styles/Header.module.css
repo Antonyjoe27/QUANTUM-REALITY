@@ -66,6 +66,11 @@
   background: #555;
 }
 
+.header__status-dot--connected {
+  background: var(--champagne-gold);
+  box-shadow: 0 0 6px var(--champagne-gold);
+}
+
 .header__status-dot--disconnected {
   background: #6b5e4a;
 }
@@ -111,4 +116,64 @@
   letter-spacing: 0.06em;
   color: rgba(198, 166, 107, 0.5);
   font-family: var(--font-mono);
+}
+
+.header__demoToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--obsidian);
+  background: linear-gradient(135deg, var(--highlight-gold) 0%, var(--champagne-gold) 100%);
+  border: 1px solid var(--highlight-gold);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 10px rgba(198, 166, 107, 0.25);
+}
+
+.header__demoToggle:hover {
+  background: var(--highlight-gold);
+  box-shadow: 0 0 14px rgba(217, 189, 135, 0.45);
+}
+
+.header__exitDemo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.38rem 0.85rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--warm-ivory);
+  background: var(--graphite-panel);
+  border: 1px solid rgba(198, 166, 107, 0.4);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.header__exitDemo:hover {
+  background: rgba(198, 166, 107, 0.15);
+  color: var(--highlight-gold);
+  border-color: var(--highlight-gold);
+}
+
+.header__presentationBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  background: rgba(198, 166, 107, 0.1);
+  border: 1px solid rgba(198, 166, 107, 0.3);
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--highlight-gold);
 }
